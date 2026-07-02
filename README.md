@@ -1,89 +1,73 @@
-# graduation-project
-GluCare is a web-based intelligent healthcare platform that predicts an individual’s risk of diabetes based on demographic and health-related inputs.
+# GluCare 🩺✨
+**An Intelligent Web-Based Healthcare Platform for Early Diabetes Risk Prediction & Interpretation**
 
-[![Demo Video](https://img.shields.io/badge/🎥%20Watch-Project%20Demo-red?style=for-the-badge)](رابط_الفيديو_هنا)
+[![Demo Video](https://img.shields.io/badge/🎥%20Watch-Project%20Demo-red?style=for-the-badge)](https://drive.google.com/file/d/1Hejo2EVWCQGlozncUW3Pe-7lc93BPu5W/view?usp=drive_link)
 
+---
 
-The system integrates:
+## 📌 Overview
+**GluCare** is a web-based intelligent healthcare platform that predicts an individual’s risk of diabetes based on demographic and health-related inputs. The goal of GluCare is to provide early diabetes risk detection in an accessible and understandable way.
 
-- Machine Learning (LightGBM) for prediction
-- Explainable AI (SHAP) for interpretation
-- PHP backend with REST APIs
-- MySQL database for data storage
-- AI chatbot for user interaction
+---
 
-The goal of GluCare is to provide early diabetes risk detection in an accessible and understandable way.
-
-Problem Statement
-
-Diabetes is often diagnosed at late stages due to lack of accessible early screening tools. Traditional methods can be time-consuming and require medical supervision.
+## ‼️ Problem Statement
+Diabetes is often diagnosed at late stages due to lack of accessible early screening tools. Traditional methods can be time-consuming and require medical supervision. 
 
 GluCare addresses this issue by providing:
-- Fast online risk prediction
-- Easy self-assessment
-- Explainable AI results to build trust and understanding
+- Fast online risk prediction.
+- Easy self-assessment.
+- Explainable AI results to build trust and understanding.
 
- Features
--  Diabetes risk prediction using LightGBM
--  Explainable AI using SHAP values
--  Web-based interface
--  User authentication (login/register)
--  Chatbot integration via API
--  RESTful API backend (PHP)
--  MySQL database integration
--  Arabic language support
+---
 
-  Tech Stack
--  Machine Learning: LightGBM
--  Explainability: SHAP
--  Backend: PHP
--  Database: MySQL
--  APIs: REST API
--  Chatbot: External AI API
--  Frontend: HTML / CSS / JS
-  
-  System Workflow
-1. User logs into the system
-2. User enters health & demographic data
-3. PHP backend sends data to ML model API
-4. LightGBM model generates prediction
-5. SHAP explains the prediction results
-6. Output is returned to the user
-7. Chatbot provides additional assistance
+## 🚀 Key Features
+- **Diabetes Risk Prediction:** Utilizing optimized LightGBM models.
+- **Explainable AI (XAI):** Interpreting results via SHAP values for full transparency.
+- **Web-Based Interface:** Responsive and supports Arabic language seamlessly.
+- **User Authentication:** Secure login and registration systems.
+- **Smart Assistance:** Chatbot integration via external AI API.
+- **Robust Architecture:** RESTful API backend driven by PHP and MySQL database.
 
- Input Features
--  Age
--  Gender
--  Weight
--  Height
--  Smoking status
--  Blood pressure
--  Psychological condition
--  General health status
--  Heart condition
--  Kidney condition
+---
 
-Output
-- Probability score (% risk)
+## 🛠️ Tech Stack
+| Component | Technology Used |
+| :--- | :--- |
+| **Machine Learning** | LightGBM |
+| **Explainability (XAI)** | SHAP |
+| **Backend & APIs** | PHP (REST API) |
+| **Database** | MySQL |
+| **Frontend** | HTML, CSS, JavaScript |
+| **Chatbot** | External AI API |
 
- Explainable AI (SHAP)
-SHAP is used to interpret model predictions by:
-- Showing feature importance
-- Explaining how each factor affects the result
-- Increasing transparency and trust in AI decisions
-   
-Demo
-A short demonstration of the system
-👉 Watch the demo here:
-https://drive.google.com/file/d/1Hejo2EVWCQGlozncUW3Pe-7lc93BPu5W/view?usp=drive_link
+---
 
+## 🔄 System Workflow
+1. User logs into the system.
+2. User enters health & demographic data.
+3. PHP backend sends data to ML model API.
+4. LightGBM model generates prediction.
+5. SHAP explains the prediction results.
+6. Output is returned to the user.
+7. Chatbot provides additional assistance.
 
- Future Improvements
-- Mobile application (Android/iOS)
-- Real-time glucose monitoring integration
-- Advanced deep learning models
-- PDF medical report generation
-- Wearable device integration
+---
+
+## 📊 Model Inference & Interpretation (Preview)
+Here is a conceptual look at how the core Machine Learning and XAI logic runs:
+
+```python
+import lightgbm as lgb
+import shap
+
+# 1. Prediction using LightGBM
+model = lgb.Booster(model_file='glucare_model.txt')
+probability_score = model.predict(X_user_inputs)
+
+# 2. Interpretation using SHAP
+explainer = shap.TreeExplainer(model)
+shap_values = explainer(X_user_inputs)
+
 
 
 
