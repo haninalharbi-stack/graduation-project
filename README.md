@@ -1,6 +1,9 @@
 # graduation-project
 GluCare is a web-based intelligent healthcare platform that predicts an individual’s risk of diabetes based on demographic and health-related inputs.
 
+[![Demo Video](https://img.shields.io/badge/🎥%20Watch-Project%20Demo-red?style=for-the-badge)](رابط_الفيديو_هنا)
+
+
 The system integrates:
 
 - Machine Learning (LightGBM) for prediction
