@@ -52,6 +52,33 @@ GluCare addresses this issue by providing:
 7. Chatbot provides additional assistance.
 
 ---
+## 📋 Input & Output Features
+### **Input Features Analyzed:**
+* 👤 **Demographics:** Age, Gender
+* ⚖️ **Physical Metrics:** Weight, Height
+* 🫀 **Medical History:** Blood pressure, Heart condition, Kidney condition
+* 🚬 **Lifestyle & Mental:** Smoking status, Psychological condition, General health status
+
+### **✨ System Output:**
+* **Probability score (% risk)** with visual SHAP feature importance to show how each factor affected the final result.
+
+---
+
+## 📸 User Interface Preview
+<img width="1403" height="690" alt="homepage" src="https://github.com/user-attachments/assets/4f6c0acf-f2b2-4a7e-86fa-98018b8d0f88" />
+<img width="1403" height="698" alt="profilePage" src="https://github.com/user-attachments/assets/dde31e46-53fe-4b1f-9ed6-92ce04ad53db" />
+<img width="1410" height="697" alt="prediction" src="https://github.com/user-attachments/assets/0c5c098e-0b19-4652-897a-26a51084fee5" />
+<img width="1395" height="698" alt="chatbot" src="https://github.com/user-attachments/assets/157f21f5-3a97-4879-966f-d0ea55c8179c" />
+
+
+---
+
+## 🪄 Future Improvements
+- [ ] Mobile application (Android/iOS) development.
+- [ ] Real-time glucose monitoring integration.
+- [ ] Advanced deep learning models experimentation.
+- [ ] Automated PDF medical report generation.
+- [ ] Wearable device integration.
 
 ## 📊 Model Inference & Interpretation (Preview)
 Here is a conceptual look at how the core Machine Learning and XAI logic runs:
